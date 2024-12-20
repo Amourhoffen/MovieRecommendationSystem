@@ -1,0 +1,293 @@
+*{
+   padding: 0%;
+   margin: 0%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   /* background: #000; */
+  
+}
+html,
+body {
+    background: black;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+#main {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+#header {
+    background: black;
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-around;
+  z-index: 2;
+}
+/*------------------------------ Fake nav -----------------*/
+/* .fake__nav{
+    background-color: transparent;
+    width: 100vw;
+    height: 10vh;
+} */
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    width: 100%;
+    height: 30px;
+    
+}
+li{
+    /* background-color: white; */
+    width: 100%;
+    list-style-type: none;  
+    margin: 10px;
+    align-items: center;
+    justify-content: end;
+}
+a{
+    /* background-color: rgb(2, 66, 2); */
+    color: white; 
+    height: 17px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px; 
+    text-shadow: 2px 2px #000000;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(0, 28, 4);
+    color: #ffffff;
+    text-shadow: none;
+ 
+}
+.hero{
+    /* background-color: rgb(255, 0, 102); */
+    height: 100vh;
+    width: 100vw;
+    padding: 20PX;
+    overflow: none;
+    right: 0%;
+    bottom: auto;
+    justify-content: center;
+    align-items: center;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    object-fit: cover;
+   animation-name:animate ;
+   animation-duration: 30s;
+   animation-fill-mode: forwards;
+   animation-direction: alternate-reverse;
+   animation-iteration-count: infinite;
+   animation-play-state: running;
+   animation-timing-function: ease-in-out;
+    background-image: url('https://qqcdnpictest.mxplay.com/pic/3dfa9558dcf60eea9b85c1e8e55b7495/en/16x9/1600x900/test_pic1734081704922.webp'); 
+}
+
+@keyframes animate {
+    0% {
+        background-image: url('https://qqcdnpictest.mxplay.com/pic/3dfa9558dcf60eea9b85c1e8e55b7495/en/16x9/1600x900/test_pic1734081704922.webp'); 
+    }
+    20%{
+        background-image: url('https://qqcdnpictest.mxplay.com/pic/d3c48dbbf2025d54839df685accd5cdd/en/16x9/1600x900/test_pic1727215236963.webp') ;
+    }
+    60%{
+        background-image: url('https://qqcdnpictest.mxplay.com/pic/7d51028c932148b39149dcbc34f9fcfb/en/16x9/1600x900/test_pic1726955678101.webp');
+    }
+    100%{
+        background-image: url('https://qqcdnpictest.mxplay.com/pic/a68961b96410d0a51322518fa9a50f1a/en/16x9/1600x900/test_pic1729064199157.webp');
+    }
+
+}
+.hero__title{
+    /* border:solid 3px #000000; */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    height: 40vh;
+    width: 70%;
+    background-color: none;
+    color: rgb(249, 249, 249);
+    text-shadow: #000;
+    text-decoration-color: #000000;
+}
+.head__titless{
+   padding-top: 170px;
+   font-size:70px;
+   font-weight: bolder;
+   text-shadow: 2px 2px #ff0000;
+}
+.head__parahraph{
+ padding-top: 10px;
+ text-shadow: 2px 2px #000000;
+}
+
+.hero__movie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    right: 0%;
+    left: 0%;
+    background-color:none;
+}
+.hero__box1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+    /* border:solid 3px #000000; */
+    /* border-radius: 20px; */
+    height: 45vh;
+    width: 50%;
+    grid-template-areas: inherit;
+    /* background-color: rgb(242, 255, 2); */
+    object-fit: cover;
+    margin: 10px auto;
+    padding-left:20px ;
+
+
+}
+.mini__movie_box{
+    /* background-color: lightblue; */
+    text-align: center;
+    font-size: 20px;
+    height: 90px;
+    /* border: 1px solid #333; */
+    border-radius: 20px;
+    /* object-fit: cover; */
+    justify-content:space-around;
+    align-items: center;
+    margin: 5px;
+    
+}
+.mini__movie{
+    
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    /* object-fit: cover; */
+    border-radius: 20px;
+    border: 2px solid wheat;
+}
+.mini__movie:hover{
+    border: 2px solid yellow;
+    transform: scale(1.1);
+}
+.hero__box2{
+    /* border:solid 3px #000000; */
+    padding: 20px;
+    margin: 5px;
+    border-radius: 20px;
+    height: 40vh;
+    width: 50%;
+    /* background-color: rgb(36, 255, 76); */
+    object-fit: cover;
+    overflow: hidden;
+    align-items: center;
+}
+.masai_Ads{
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 40vh;
+    width: 100%;
+    /* z-index:-100; */
+    overflow: hidden;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+   border-radius: 20px; 
+   border: 5px solid white;
+   
+   
+  }
+  .second__page{
+    
+    background: #000;
+    -webkit-text-fill-color: aliceblue;
+    text-decoration-color: aliceblue;
+    margin-top: 30px;
+    height: max-content;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 20px; */
+  }
+  .main__movie__box{
+    height: 37vh;
+    width: 100vw;
+    /* background-color: #ff0000; */
+    padding: 20px;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-around;
+   
+  }
+  .main__movie__mini__box{
+    background-color: rgb(0, 21, 21);
+    height: 100%;
+    width: 11%;
+    padding: 4px;
+    border-radius: 20px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  img:hover{
+    transform: scale(1.5);
+  }
+  .about__box{
+    text-align: start;
+    padding: 20px;
+    text-decoration: solid;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10PX auto;
+    height: 40vh;
+    width: 100vw;
+    right: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color:rgb(255, 0, 0); */
+  }
+  .about__text{
+    margin-top: 20px;
+    padding-top: 70px;
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(225, 0, 0); */
+    
+  }
+  .about__poster__box{
+    height: 250PX;
+    width: 245PX;
+    /* background-color: rgb(96, 231, 0); */
+  }
+  .about__text h1{
+    font-size: 80px;
+  }
+  .about__text h4, p{
+    margin: 10px;
+  }
+  #sociallinks i{
+    margin-top: 20px;
+    padding-top: 20px;
+  }
